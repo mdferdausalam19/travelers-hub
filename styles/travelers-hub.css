@@ -346,7 +346,6 @@ select {
   backdrop-filter: blur(2.5px);
   padding: 50px;
 }
-
 .deals-discount-card > div {
   display: flex;
   gap: 24px;
@@ -368,6 +367,40 @@ select {
   color: #ff5400;
   font-size: 20px;
   margin-bottom: 24px;
+}
+.deals-discount-btn {
+  margin-top: 45px;
+  text-align: center;
+}
+/* Media Related Styles */
+.media-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.media-text {
+  width: 50%;
+}
+.media-text * {
+  margin-bottom: 25px;
+}
+.media-title {
+  color: #131318;
+  font-size: 40px;
+}
+.media-description {
+  color: #5a5a5d;
+}
+.media-text-list {
+  color: #131318;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.media-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 /* Newsletter Related Styles */
 .newsletter-container {
@@ -552,6 +585,12 @@ footer hr {
   }
   .deals-discount-card > div {
     flex-wrap: wrap;
+  }
+  .media-container {
+    flex-direction: column;
+  }
+  .media-text {
+    width: 100%;
   }
   .newsletter-container {
     flex-direction: column;
