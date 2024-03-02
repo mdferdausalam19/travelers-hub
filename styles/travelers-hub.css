@@ -23,7 +23,64 @@
   border: none;
   padding: 15px 30px;
 }
+/* Nav Related Styles */
+.nav-container {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #131318;
+  font-size: 2.25em;
+  font-weight: 800;
+}
+.nav-title span {
+  color: #ff5400;
+}
+.nav-link > ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-link li {
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.nav-link ul span {
+  color: #ff5400;
+}
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
 
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 30px;
+  height: 10%;
+  background-color: #131318;
+  margin-bottom: 5px;
+}
 /* Banner Related Styles */
 
 .banner-container {
@@ -65,10 +122,7 @@
   gap: 24px;
   padding: 16px;
 }
-.banner-input div {
-  flex: 1;
-}
-.banner-input div input {
+.banner-input input {
   width: 100%;
   border-radius: 8px;
   background: #fff;
@@ -77,10 +131,8 @@
   outline: none;
   padding: 10px;
 }
-.banner-input form div {
-  flex: 1;
-}
-.banner-input form div button {
+
+.banner-input form button {
   width: 100%;
   border-radius: 8px;
   background: #ff5400;
@@ -148,23 +200,39 @@
 }
 .destination-image2 {
   grid-column: 7 / span 6;
+  position: relative;
 }
 .destination-image3 {
   grid-column: 1 / span 4;
+  position: relative;
 }
 .destination-image4 {
   grid-column: 5 / span 5;
+  position: relative;
 }
 .destination-image5 {
   grid-column: 10 / span 3;
+  position: relative;
 }
 .destination-image6 {
   grid-column: 1 / span 5;
+  position: relative;
 }
 .destination-image7 {
   grid-column: 6 / span 7;
+  position: relative;
 }
-
+.destination-image1-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 800;
+}
 /* Why Choose Us Section Related Styles */
 .choose-us-container {
   margin-top: 100px;
@@ -286,6 +354,8 @@
   position: absolute;
   bottom: 15%;
   right: 3%;
+  color: #fff;
+  font-weight: 800;
 }
 
 /* Footer Related Styles */
@@ -324,7 +394,7 @@ footer {
   margin: 40px 0;
 }
 footer hr {
-  border-color: rgba(19, 19, 24, 0.10);
+  border-color: rgba(19, 19, 24, 0.1);
 }
 .copyright {
   margin-top: 50px;
@@ -338,6 +408,18 @@ footer hr {
   .container {
     width: 90%;
     margin: 0 auto;
+  }
+  .nav-container {
+    margin: 20px auto;
+  }
+  .nav-title {
+    font-size: 1.5em;
+  }
+  .nav-link ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
   }
   .banner-container {
     margin-top: 20px;
