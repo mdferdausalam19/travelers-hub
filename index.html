@@ -39,17 +39,24 @@
       <section class="banner-container container">
         <h1 class="banner-title">Explore Your Travel</h1>
         <p class="banner-description">
-          Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
-          adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          Embark on a journey of discovery with our curated travel experiences.
+          From breathtaking landscapes to vibrant cultures, let every adventure
+          create lasting memories. Your next destination awaits exploration.
         </p>
         <div class="banner-input">
           <form action="">
             <input type="text" placeholder="Where go" />
-
-            <input type="text" placeholder="When" />
-
-            <input type="text" placeholder="Select Type" />
-
+            <select name="when" id="when">
+              <option value="" disabled selected>When</option>
+              <option value="today">Today</option>
+              <option value="tomorrow">Tomorrow</option>
+            </select>
+            <select name="type" id="type">
+              <option value="" disabled selected>Select type</option>
+              <option value="beach">Beach</option>
+              <option value="mountain">Mountain</option>
+              <option value="city">City</option>
+            </select>
             <button class="btn-primary">
               <i class="fa-solid fa-magnifying-glass"></i>
               Find Now
@@ -65,28 +72,28 @@
           <h1 class="popular-tours-title">Our Popular Tours</h1>
           <div class="popular-tours-description">
             <p>
-              Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-              odio sit massa. Sodales dictumst nec nibh pellentesque. lorem
+              Indulge in our handpicked collection of popular tours, crafted for
+              every adventurer. Immerse yourself in unforgettable experiences,
+              guided by our passion for travel.
             </p>
             <ul>
               <li>
-                Tempus euismod lacus mauris dignissim quis in ultrices. Magna
-                nullam odio neque diam. Sociis erat at . lorem
+                Curated Experiences: Explore meticulously designed itineraries
+                for a truly immersive travel adventure.
               </li>
               <li>
-                Adipiscing ornare pellentesque mauris volutpat tortor vitae
-                platea porta lacus. Lectus suspendisse nullam.
+                Expert Guides: Journey with knowledgeable guides who add depth
+                and insight to every destination.
               </li>
               <li>
-                Accumsan eget et turpis praesent lorem egestas enim elit
-                bibendum. Risus at in.
+                Unforgettable Memories: Create memories that last a lifetime
+                with our exceptional travel experiences.
               </li>
             </ul>
             <p>
-              Amet consectetur. Vulputate commodo felis molestie risus ornare
-              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-              Habitant adipiscing risus natoque aliquet. Id bibendum nunc
-              senectus semper tincidunt.
+              Discover the world with confidence and ease. Choose from our array
+              of popular tours, where every moment is an opportunity for new
+              discoveries and unforgettable memories.
             </p>
             <button class="btn-primary">Read More</button>
           </div>
@@ -101,8 +108,10 @@
         <div class="destination-text">
           <h1 class="destination-title">Choose Your Destination</h1>
           <p class="destination-description">
-            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-            odio sit massa. Sodales dictumst nec nibh pellentesque.
+            Unleash your wanderlust and take control of your journey. Select
+            from our diverse range of destinations, each promising a unique
+            tapestry of culture, adventure, and exploration. Your dream
+            destination is just a click away.
           </p>
         </div>
         <div class="destination-image">
@@ -121,7 +130,7 @@
           <div class="destination-image3">
             <img src="images/Rectangle6.png" alt="" />
             <div class="destination-image1-text">
-              <h3>Srilanka</h3>
+              <h3>Sri Lanka</h3>
             </div>
           </div>
           <div class="destination-image4">
@@ -155,36 +164,97 @@
       <section class="choose-us-container container">
         <h1 class="choose-us-title">Why Choose Us</h1>
         <p class="choose-us-description">
-          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-          odio sit massa. Sodales dictumst nec nibh pellentesque.
+          Elevate your travel experience with us. Our commitment to excellence
+          is reflected in handpicked hotels, world-class service, and our best
+          price guarantee. Choose a journey that exceeds expectations.
         </p>
         <div class="choose-us-card-container">
           <div class="card1">
             <img src="images/hotel1.png" alt="" />
             <h2>Handpicked Hotels</h2>
             <p>
-              Amet consectetur. Vulputate commodo felis molestie risus ornare
-              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-              Habitant adipiscing risus natoque aliquet.
+              Indulge in luxury and comfort with our carefully selected hotels.
+              Each accommodation is chosen for its exceptional quality, ensuring
+              a stay as memorable as your destination.
             </p>
           </div>
           <div class="card2">
             <img src="images/map1.png" alt="" />
             <h2>World Class Service</h2>
             <p>
-              Amet consectetur. Vulputate commodo felis molestie risus ornare
-              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-              Habitant adipiscing risus natoque aliquet.
+              Experience the pinnacle of hospitality with our world-class
+              service. From attentive guides to seamless logistics, our team is
+              dedicated to providing you with an unparalleled travel experience.
             </p>
           </div>
           <div class="card3">
             <img src="images/price-tag1.png" alt="" />
             <h2>Best Price Guarantee</h2>
             <p>
+              Enjoy peace of mind with our best price guarantee. We ensure that
+              you get the most value for your investment, making your dream
+              vacation both unforgettable and affordable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deals & Discounts Section -->
+      <section class="deals-discount-container container">
+        <h1 class="deals-discount-title">Deals & Discounts</h1>
+        <p class="deals-discount-description">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+        <div class="deals-discount-sub-container-1">
+          <div class="deals-discount-card">
+            <div>
+              <h4><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</h4>
+              <h4><i class="fa-solid fa-users"></i> Max : 10</h4>
+              <h4><i class="fa-solid fa-location-dot"></i> Malaysia</h4>
+            </div>
+            <h2 class="card-title">Tour To Satorini</h2>
+            <p class="card-description">
               Amet consectetur. Vulputate commodo felis molestie risus ornare
               nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-              Habitant adipiscing risus natoque aliquet.
+              Habitant adipiscing.
             </p>
+            <p class="card-price">Price: $1300-$1500</p>
+            <button class="btn-primary">Book Now</button>
+          </div>
+        </div>
+        <div class="deals-discount-sub-container-2">
+          <div class="deals-discount-card">
+            <div>
+              <h4><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</h4>
+              <h4><i class="fa-solid fa-users"></i> Max : 10</h4>
+              <h4><i class="fa-solid fa-location-dot"></i> Malaysia</h4>
+            </div>
+            <h2 class="card-title">Tour To Satorini</h2>
+            <p class="card-description">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing.
+            </p>
+            <p class="card-price">Price: $1300-$1500</p>
+            <button class="btn-primary">Book Now</button>
+          </div>
+        </div>
+        <div class="deals-discount-sub-container-3">
+          <div class="deals-discount-card">
+            <div>
+              <h4><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</h4>
+              <h4><i class="fa-solid fa-users"></i> Max : 10</h4>
+              <h4><i class="fa-solid fa-location-dot"></i> Malaysia</h4>
+            </div>
+            <h2 class="card-title">Tour To Satorini</h2>
+            <p class="card-description">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare
+              nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing.
+            </p>
+            <p class="card-price">Price: $1300-$1500</p>
+            <button class="btn-primary">Book Now</button>
           </div>
         </div>
       </section>
@@ -217,9 +287,9 @@
           <h2>Hero <span>Travel</span></h2>
         </div>
         <p class="footer-description">
-          Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae
-          blandit orci potenti vulputate. Leo erat maecenas vitae elementum
-          ultricies nullam.
+          Explore the world with confidence. Our passion for travel drives us to
+          deliver exceptional experiences. Contact us to plan your next
+          adventure and make memories that last a lifetime.
         </p>
         <div class="social-media-icon">
           <div><i class="fa-brands fa-twitter"></i></div>
@@ -228,7 +298,7 @@
           <div><i class="fa-brands fa-github"></i></div>
         </div>
         <hr />
-        <p class="copyright">2017, All Rights Reserved.</p>
+        <p class="copyright">&copy; 2024, All Rights Reserved.</p>
       </div>
     </footer>
   </body>
