@@ -402,6 +402,48 @@ select {
   object-fit: cover;
   border-radius: 16px;
 }
+/* Travel Stories Related Styles */
+.travel-stories-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.travel-stories-title {
+  color: #131318;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.travel-stories-text {
+  color: #5a5a5d;
+  font-size: 1em;
+}
+
+.travel-stories-form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.travel-stories-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.travel-stories-form textarea,
+.travel-stories-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+}
+
 /* Newsletter Related Styles */
 .newsletter-container {
   margin: 100px auto;
@@ -510,6 +552,93 @@ footer hr {
   font-weight: 300;
 }
 /* Responsive Media Queries */
+/* Tablet or Mid-Size Devices */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+  .nav-container {
+    margin: 30px auto;
+  }
+  .nav-title {
+    font-size: 1.8em;
+  }
+  .nav-link ul {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .banner-container {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .banner-title {
+    font-size: 3.5em;
+  }
+  .popular-tours-container {
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 20px;
+  }
+
+  .popular-tours-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .destination-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destination-image1,
+  .destination-image2,
+  .destination-image3,
+  .destination-image4,
+  .destination-image5,
+  .destination-image6,
+  .destination-image7 {
+    grid-column: span 1;
+  }
+  .choose-us-container {
+    margin-top: 70px;
+  }
+  .choose-us-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card1,
+  .card2,
+  .card3 {
+    grid-column: span 1;
+  }
+  .deals-discount-container {
+    margin: 70px auto;
+  }
+  .deals-discount-sub-container-1,
+  .deals-discount-sub-container-2,
+  .deals-discount-sub-container-3 {
+    padding: 40px;
+  }
+  .deals-discount-card {
+    padding: 70px;
+  }
+  .deals-discount-card > div {
+    flex-wrap: nowrap;
+  }
+  .media-container {
+    flex-direction: row;
+  }
+  .media-text {
+    width: 60%;
+  }
+  .travel-stories-container {
+    margin-top: 70px;
+  }
+  .newsletter-container {
+    margin: 70px auto;
+  }
+  footer {
+    padding: 70px 0;
+  }
+}
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
   .container {
@@ -591,6 +720,9 @@ footer hr {
   }
   .media-text {
     width: 100%;
+  }
+  .travel-stories-container {
+    margin-top: 50px;
   }
   .newsletter-container {
     flex-direction: column;
