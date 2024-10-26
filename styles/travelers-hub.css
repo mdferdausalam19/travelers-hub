@@ -564,10 +564,10 @@ footer hr {
     font-size: 1.8em;
   }
   .nav-link ul {
-    display: flex;
+    display: none;
   }
   .hamburger {
-    display: none;
+    display: block;
   }
   .banner-container {
     margin-top: 30px;
@@ -624,17 +624,19 @@ footer hr {
     flex-wrap: nowrap;
   }
   .media-container {
-    flex-direction: row;
+    flex-direction: column;
   }
   .media-text {
-    width: 60%;
+    width: 100%;
   }
   .travel-stories-container {
     margin-top: 70px;
   }
   .newsletter-container {
+    flex-direction: column;
     margin: 70px auto;
   }
+
   footer {
     padding: 70px 0;
   }
